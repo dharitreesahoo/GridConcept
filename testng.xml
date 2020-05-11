@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <parameter name="machineName" value = "node1"></parameter>
+    <classes>
+      <class name="desiredCapability.desiredCapability.Selenium_Grid_parallel"/>
+      <class name="desiredCapability.desiredCapability.Selenium_Grid_parallel"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test">
+  <parameter name="machineName" value = "node2"></parameter>
+    <classes>
+      <class name="desiredCapability.desiredCapability.Selenium_Grid_parallel"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="Test">
+  <parameter name="machineName" value = "node3"></parameter>
+    <classes>
+      <class name="desiredCapability.desiredCapability.Selenium_Grid_parallel"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
